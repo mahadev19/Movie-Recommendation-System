@@ -1,0 +1,9 @@
+# Specify that all files with .pkl extension should be handled by Git LFS
+*.pkl filter=lfs diff=lfs merge=lfs -text
+# Specify that files in the 'images' directory should be treated as binary
+images/* binary
+# Specify that files with .txt extension should be treated as text and converted to LF line endings
+*.txt text eol=lf
+# Specify that files with .html extension should be treated as text and converted to CRLF line endings
+*.html text eol=crlf
+path/to/similarity.pkl filter=lfs diff=lfs merge=lfs -text
